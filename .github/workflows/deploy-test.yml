@@ -28,11 +28,14 @@ jobs:
         run: pnpm install
 
       - name: Build the site
-        run: pnpm build
-
-      - name: Upload site content
         run: pnpm astro build
-        
+
+      - name: Upload artifact for deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist # Asegúrate de que este sea el directorio de salida de tu build
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -40,6 +43,21 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Download artifact from build
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+        
+      - name: Upload to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
+        with:
+          branch: gh-pages
+          folder: ./dist
