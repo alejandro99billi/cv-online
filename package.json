@@ -8,6 +8,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "build-github": "astro check && astro build && cp -r dist/_astro/* dist/",
+    "build-test": "astro check && astro build && node copy-files.js",
     "preview": "astro preview",
     "astro": "astro"
   },
