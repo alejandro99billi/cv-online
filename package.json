@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "build-github": "astro check && astro build && cp -r dist/_astro/* dist/",
     "preview": "astro preview",
     "astro": "astro"
   },
