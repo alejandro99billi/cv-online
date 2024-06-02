@@ -30,6 +30,11 @@ jobs:
       - name: Build the site
         run: pnpm astro build
 
+      - name: Upload artifact for deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: ./dist # Asegúrate de que este sea el directorio de salida de tu build
 
   deploy:
     needs: build
