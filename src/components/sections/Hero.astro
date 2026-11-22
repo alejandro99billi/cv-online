@@ -1,5 +1,4 @@
 ---
-import { basics } from "@cv"
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
@@ -9,6 +8,16 @@ import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 import type { SocialIcon } from "@/types"
 import { withBase } from "@/utils/withBase"
+import { getCv, ui, langPath, type Lang } from "@/i18n"
+
+interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+const t = ui[lang]
+const otherLang: Lang = lang === "it" ? "en" : "it"
+const { basics } = getCv(lang)
 
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
@@ -26,6 +35,15 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 ---
 
 <Section>
+  <a
+    class="lang-switch no-print"
+    href={withBase(langPath(otherLang))}
+    hreflang={otherLang}
+    title={t.switchTo}
+  >
+    <span class:list={{ active: lang === "it" }}>IT</span>
+    <span class:list={{ active: lang === "en" }}>EN</span>
+  </a>
   <div class="container">
     <div class="info">
       <h1>{name}</h1>
@@ -42,7 +60,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           email && (
             <a
               href={`mailto:${email}`}
-              title={`Invia una email a ${name} (${email})`}
+              title={t.sendMail(name, email)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -54,7 +72,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`Chiama ${name} al numero ${phone}`}
+              title={t.call(name, phone)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +87,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
             return (
               <a
                 href={url}
-                title={`Visita il profilo di ${name} su ${network}`}
+                title={t.visitProfile(name, network)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,6 +109,33 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 </Section>
 
 <style>
+  .lang-switch {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .lang-switch span {
+    padding: 4px 10px;
+    color: #777;
+  }
+
+  .lang-switch span.active {
+    background: #222;
+    color: #fff;
+  }
+
+  .lang-switch:hover span:not(.active) {
+    background: #eee;
+  }
+
   .container {
     display: flex;
     flex-direction: row;

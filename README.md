@@ -8,7 +8,11 @@ Online: https://alejandro-salvatierra.netlify.app/
 
 ## Aggiornare i contenuti
 
-Tutti i dati stanno in `cv.json` (esperienze, formazione, progetti, competenze, lingue).
+Il CV è disponibile in italiano (`/`, predefinito) e in inglese (`/en/`), con un pulsante IT/EN in alto.
+
+- `cv.json`: contenuti in italiano
+- `cv.en.json`: contenuti in inglese (tienilo allineato a `cv.json`)
+- `src/i18n.ts`: testi dell'interfaccia (titoli delle sezioni, ecc.)
 La foto è `public/me.webp`.
 
 ## Comandi

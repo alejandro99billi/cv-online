@@ -1,0 +1,325 @@
+{
+  "basics": {
+    "name": "Alejandro Salvatierra",
+    "label": "Solutions Architect & DevOps Engineer",
+    "image": "",
+    "email": "alejandrobilly19@gmail.com",
+    "phone": "+39 3319966804",
+    "url": "https://alejandro-salvatierra.netlify.app/en/",
+    "summary": "Solutions Architect and DevOps Engineer with 4+ years of experience in software development. I started as a Full Stack developer (Java Spring and Angular) and specialised in CI/CD, Kubernetes (OpenShift and Google Cloud) and automation. Today at GPI Group I design solution architectures for our clients and drive infrastructure decisions, while remaining responsible for pipelines and releases.",
+    "location": {
+      "address": "",
+      "postalCode": "20090",
+      "city": "Cesano Boscone",
+      "countryCode": "IT",
+      "region": "Milan, Italy"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alejandro-salvatierra",
+        "url": "https://www.linkedin.com/in/alejandro-salvatierra-0651a2222/"
+      },
+      {
+        "network": "GitHub",
+        "username": "alejandro99billi",
+        "url": "https://github.com/alejandro99billi/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "GPI Group",
+      "position": "Solutions Architect / DevOps Engineer",
+      "url": "https://www.gpi.it/",
+      "startDate": "2026-08-01",
+      "endDate": null,
+      "summary": "Evolution of my DevOps role towards solution architecture for the group's clients.",
+      "highlights": [
+        "Designing solution architectures and cloud infrastructure (OpenShift, Google Cloud) for client projects.",
+        "Defining the CI/CD, deployment and observability standards adopted by development teams.",
+        "Technical point of reference between development teams, operations and clients for architectural decisions.",
+        "Still responsible for GitLab/Jenkins pipelines, Kubernetes clusters and releases."
+      ]
+    },
+    {
+      "name": "GPI Group",
+      "position": "DevOps Engineer",
+      "url": "https://www.gpi.it/",
+      "startDate": "2024-05-01",
+      "endDate": "2026-08-01",
+      "summary": "",
+      "highlights": [
+        "Built CI/CD pipelines in GitLab and Jenkins for the group's teams.",
+        "Release support and management of clients' Kubernetes clusters (OpenShift and Google Cloud).",
+        "Developed Java Spring backend components to improve security and monitoring processes.",
+        "Bash scripting to automate component builds and installations."
+      ]
+    },
+    {
+      "name": "Dedalus (Smart Hospital Group S.R.L. division)",
+      "position": "Full Stack Developer",
+      "url": "https://www.dedalus.com/",
+      "startDate": "2023-07-01",
+      "endDate": "2024-05-01",
+      "summary": "",
+      "highlights": [
+        "Maintained and built backend components based on Java Spring.",
+        "Mentored and onboarded new junior backend colleagues.",
+        "Built Jenkins pipelines for developers and testers.",
+        "Developed frontend modules in Angular."
+      ]
+    },
+    {
+      "name": "Dromedian (Smart Hospital S.R.L. division)",
+      "position": "Full Stack Developer",
+      "url": "",
+      "startDate": "2023-01-01",
+      "endDate": "2023-07-01",
+      "summary": "",
+      "highlights": [
+        "Designed and built complete components integrating the company's Java Spring frameworks and libraries.",
+        "Built Angular portals with dynamic and static templates customisable per client.",
+        "Managed relational databases and deployed components on VMs with Docker."
+      ]
+    },
+    {
+      "name": "Think Open Group",
+      "position": "Full Stack Developer",
+      "url": "https://www.thinkopen.it/",
+      "startDate": "2022-06-01",
+      "endDate": "2023-01-01",
+      "summary": "",
+      "highlights": [
+        "Developed features for Java and Spring Framework applications and fixes on frontend components.",
+        "Built dashboards with Elasticsearch, RabbitMQ and ClickHouse."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Full Stack Developer Bootcamp - Think Open Group, Milan",
+      "url": "https://www.thinkopen.it/",
+      "area": "Development with Spring Boot (Java) and Angular",
+      "studyType": "Bootcamp",
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Instituto Provincia del Carchi, Guayaquil (Ecuador)",
+      "url": "",
+      "area": "High school diploma",
+      "studyType": "Diploma",
+      "startDate": "2019-01-01",
+      "endDate": "2019-12-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "1st place - Devathon",
+      "date": "2024-08-01",
+      "awarder": "Pedro J. Plasencia Velasquez's community",
+      "summary": "Vault Shield, personal password manager."
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Kubernetes",
+      "level": "Advanced",
+      "keywords": [
+        "DevOps",
+        "Cloud"
+      ]
+    },
+    {
+      "name": "OpenShift",
+      "level": "Advanced",
+      "keywords": [
+        "DevOps",
+        "Cloud"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "level": "Advanced",
+      "keywords": [
+        "Cloud"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": [
+        "DevOps",
+        "Container"
+      ]
+    },
+    {
+      "name": "GitLab CI",
+      "level": "Advanced",
+      "keywords": [
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Jenkins",
+      "level": "Advanced",
+      "keywords": [
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Bash",
+      "level": "Advanced",
+      "keywords": [
+        "Automation"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Advanced",
+      "keywords": [
+        "Backend"
+      ]
+    },
+    {
+      "name": "Spring",
+      "level": "Advanced",
+      "keywords": [
+        "Backend"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Intermediate",
+      "keywords": [
+        "Frontend"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Frontend"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "keywords": [
+        "Scripting"
+      ]
+    },
+    {
+      "name": "C#",
+      "level": "Basic",
+      "keywords": [
+        ".NET"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "Advanced",
+      "keywords": [
+        "Database"
+      ]
+    },
+    {
+      "name": "Oracle DB",
+      "level": "Intermediate",
+      "keywords": [
+        "Database"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Intermediate",
+      "keywords": [
+        "Database"
+      ]
+    },
+    {
+      "name": "ClickHouse",
+      "level": "Intermediate",
+      "keywords": [
+        "Database"
+      ]
+    },
+    {
+      "name": "ELK Stack",
+      "level": "Intermediate",
+      "keywords": [
+        "Monitoring"
+      ]
+    },
+    {
+      "name": "Gradle",
+      "level": "Intermediate",
+      "keywords": [
+        "Build"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version control"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version control"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Vault Shield",
+      "isActive": false,
+      "description": "Personal password manager, 1st place at the Devathon organised by Pedro J. Plasencia Velasquez's community (August 2024).",
+      "highlights": [
+        "1st place Devathon",
+        "Security",
+        "Teamwork"
+      ],
+      "url": "https://github.com/VaultShield",
+      "github": "https://github.com/VaultShield"
+    },
+    {
+      "name": "Vagabond Quotes",
+      "isActive": true,
+      "description": "Dynamic website of reflections inspired by one of my favourite works of fiction, with automatic deployment on free hosting.",
+      "highlights": [
+        "Angular",
+        "CI/CD",
+        "Netlify"
+      ],
+      "url": "https://vagabond-quotes.netlify.app/"
+    }
+  ]
+}

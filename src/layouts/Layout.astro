@@ -1,23 +1,28 @@
 ---
-import { basics } from "@cv";
 import { withBase } from "@/utils/withBase";
+import { getCv, langPath, LANGS, DEFAULT_LANG, type Lang } from "@/i18n";
 
 interface Props {
   title: string;
+  lang: Lang;
 }
 
-const { title } = Astro.props;
+const { title, lang } = Astro.props;
+const { basics } = getCv(lang);
+const site = Astro.site?.href.replace(/\/$/, "") ?? "";
 
 const { image, summary, url } = basics;
 ---
 
 <!doctype html>
-<html lang="it">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
+    {LANGS.map((l) => <link rel="alternate" hreflang={l} href={site + withBase(langPath(l))} />)}
+    <link rel="alternate" hreflang="x-default" href={site + withBase(langPath(DEFAULT_LANG))} />
     <link rel="icon" type="image/svg+xml" href={withBase("favicon.svg")} />
     {image && <link rel="preload" as="image" href={withBase(image)} />}
 

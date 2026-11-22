@@ -1,0 +1,49 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import Languages from "@/components/sections/Languages.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+
+import { getCv, ui, type Lang } from "@/i18n"
+
+interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+const { name, label } = getCv(lang).basics
+---
+
+<Layout title={ui[lang].pageTitle(name, label)} lang={lang}>
+  <main>
+    <Hero lang={lang} />
+    <About lang={lang} />
+    <Experience lang={lang} />
+    <Education lang={lang} />
+    <Projects lang={lang} />
+    <Skills lang={lang} />
+    <Languages lang={lang} />
+  </main>
+
+  <KeyboardManager lang={lang} />
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

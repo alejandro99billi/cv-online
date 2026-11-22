@@ -1,16 +1,19 @@
 ---
 import Section from "../Section.astro"
 
-import { languages } from "@cv"
+import { getCv, ui, type Lang } from "@/i18n"
 
-const NAMES: Record<string, string> = {
-  Spanish: "Spagnolo",
-  Italian: "Italiano",
-  English: "Inglese",
+interface Props {
+  lang: Lang
 }
+
+const { lang } = Astro.props
+const t = ui[lang]
+const { languages } = getCv(lang)
+const NAMES = t.languageNames
 ---
 
-<Section title="Lingue">
+<Section title={t.languages}>
   <ul>
     {
       languages.map(({ language, fluency }) => (

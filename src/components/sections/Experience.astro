@@ -1,15 +1,23 @@
 ---
 import Section from "../Section.astro"
 
-import { work } from "@cv"
+import { getCv, ui, type Lang } from "@/i18n"
+
+interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+const t = ui[lang]
+const { work } = getCv(lang)
 
 const formatDate = (date: string | null) =>
   date == null
-    ? "Presente"
-    : new Date(date).toLocaleDateString("it-IT", { month: "short", year: "numeric" })
+    ? t.present
+    : new Date(date).toLocaleDateString(t.locale, { month: "short", year: "numeric" })
 ---
 
-<Section title="Esperienza professionale">
+<Section title={t.experience}>
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary, highlights, url }) => (
@@ -19,7 +27,7 @@ const formatDate = (date: string | null) =>
               <div>
                 <h3>
                   {url ? (
-                    <a href={url} title={`Vedi ${name}`} target="_blank" rel="noopener noreferrer">
+                    <a href={url} title={t.see(name)} target="_blank" rel="noopener noreferrer">
                       {name}
                     </a>
                   ) : (
