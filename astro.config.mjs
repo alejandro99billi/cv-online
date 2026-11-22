@@ -1,8 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-// Pubblicato su GitHub Pages: https://alejandro99billi.github.io/cv-online/
+// Pubblicato su Netlify: quando avrai il dominio, aggiorna `site` (e `basics.url` in cv.json)
 export default defineConfig({
-  site: 'https://alejandro99billi.github.io',
-  base: '/cv-online',
+  site: 'https://alejandro-salvatierra.netlify.app',
 });

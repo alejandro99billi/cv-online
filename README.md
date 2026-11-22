@@ -4,7 +4,7 @@ CV personale in versione web e stampabile (PDF), costruito con [Astro](https://a
 Basato sul template [minimalist-portfolio-json](https://github.com/midudev/minimalist-portfolio-json) di midudev
 (schema dati [JSON Resume](https://jsonresume.org/schema/)).
 
-Online: https://alejandro99billi.github.io/cv-online/
+Online: https://alejandro-salvatierra.netlify.app/
 
 ## Aggiornare i contenuti
 
@@ -16,7 +16,7 @@ La foto è `public/me.webp`.
 | Comando        | Azione                                      |
 | -------------- | ------------------------------------------- |
 | `pnpm install` | Installa le dipendenze                      |
-| `pnpm dev`     | Server locale su `localhost:4321/cv-online` |
+| `pnpm dev`     | Server locale su `localhost:4321` |
 | `pnpm build`   | Type check + build in `./dist/`             |
 | `pnpm preview` | Anteprima della build                       |
 
@@ -24,8 +24,7 @@ Per il PDF: apri la pagina e premi `Cmd/Ctrl + K` → "Stampa / Salva PDF".
 
 ## Deploy
 
-Ogni push su `master` pubblica il sito su GitHub Pages (`.github/workflows/deploy.yml`).
-In *Settings → Pages* la sorgente deve essere **GitHub Actions**.
+Ogni push su `master` viene pubblicato automaticamente da Netlify (configurazione in `netlify.toml`).
 
 ## Licenza
 
