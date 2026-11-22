@@ -2,53 +2,51 @@
 import Section from "../Section.astro"
 
 import { work } from "@cv"
+
+const formatDate = (date: string | null) =>
+  date == null
+    ? "Presente"
+    : new Date(date).toLocaleDateString("it-IT", { month: "short", year: "numeric" })
 ---
 
-<Section title="Experiencia laboral">
+<Section title="Esperienza professionale">
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+      work.map(({ name, startDate, endDate, position, summary, highlights, url }) => (
+        <li>
+          <article>
+            <header>
+              <div>
+                <h3>
+                  {url ? (
+                    <a href={url} title={`Vedi ${name}`} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
+                  ) : (
+                    name
+                  )}
+                </h3>
+                <h4>{position}</h4>
+              </div>
 
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
-                        {name}
-                      </a>
-                    </h3>
-                    <h4>{position}</h4>
-                  </div>
+              <div>
+                <time datetime={startDate}>{formatDate(startDate)}</time>
+                {" - "}
+                <time datetime={endDate ?? undefined}>{formatDate(endDate)}</time>
+              </div>
+            </header>
 
-                  <div>
-                    <time 
-                      datetime={startDate}
-                      data-title={startDate}>
-                        {startYear}
-                    </time>
-                    {" - "}
-                    <time 
-                      datetime={endDate}
-                      data-title={endDate}>
-                        {endYear}
-                    </time>
-                  </div>
-                </header>
-
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
+            <footer>
+              {summary && <p>{summary}</p>}
+              {highlights.length > 0 && (
+                <ul class="highlights">
+                  {highlights.map((highlight) => <li>{highlight}</li>)}
+                </ul>
+              )}
+            </footer>
+          </article>
+        </li>
+      ))
     }
   </ul>
 </Section>
@@ -92,33 +90,18 @@ import { work } from "@cv"
     cursor: default;
   }
 
-  [data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease-in-out 0.5s;
-    visibility: visible;
+  .highlights {
+    display: block;
+    list-style: disc;
+    padding-left: 1.2rem;
+    gap: 4px;
+    margin-top: 4px;
+    color: #333;
+    font-size: 0.9rem;
   }
 
-  [data-title]:after {
-    content: attr(data-title);
-    background-color: #333;
-    color: #fff;
-    font-size: .75rem;
-    font-family: Menlo, Monaco, Lucida Console, "Courier New", monospace;;
-    position: absolute;
-    padding: .2rem .5rem;
-    bottom: -1.4rem;
-    left: 50%;
+  time {
     white-space: nowrap;
-    box-shadow: 1px 1px 1px #222222;
-    opacity: 0;
-    border: 1px solid #111111;
-    z-index: 99999;
-    visibility: hidden;
-    border-radius: 6px;
-  }
-
-  [data-title] {
-    position: relative;
   }
 
   @media (width <= 700px) {

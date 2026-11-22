@@ -1,29 +1,24 @@
 {
   "basics": {
     "name": "Alejandro Salvatierra",
-    "label": "Svilupatore Software e DevOps",
-    "image": "cv-online/me.webp",
+    "label": "Solutions Architect & DevOps Engineer",
+    "image": "",
     "email": "alejandrobilly19@gmail.com",
     "phone": "+39 3319966804",
-    "url": "https://aleister.tech/",
-    "summary": "3 anni di esperienza come svillupatore full stack",
+    "url": "https://alejandro99billi.github.io/cv-online/",
+    "summary": "Solutions Architect e DevOps Engineer con oltre 4 anni di esperienza nello sviluppo software. Ho iniziato come sviluppatore Full Stack (Java Spring e Angular) e mi sono specializzato in CI/CD, Kubernetes (OpenShift e Google Cloud) e automazione. Oggi in GPI Group progetto le architetture delle soluzioni per i nostri clienti e guido le scelte infrastrutturali, mantenendo la responsabilità sulle pipeline e sui rilasci.",
     "location": {
       "address": "",
       "postalCode": "20090",
       "city": "Cesano Boscone",
       "countryCode": "IT",
-      "region": "Italia"
+      "region": "Milano, Italia"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "alejandro-salvatierra",
         "url": "https://www.linkedin.com/in/alejandro-salvatierra-0651a2222/"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
       },
       {
         "network": "GitHub",
@@ -34,246 +29,151 @@
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "GPI Group",
+      "position": "Solutions Architect / DevOps Engineer",
+      "url": "https://www.gpi.it/",
+      "startDate": "2026-08-01",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "Evoluzione del ruolo DevOps verso l'architettura delle soluzioni per i clienti del gruppo.",
       "highlights": [
-        "Started the company"
+        "Progettazione dell'architettura delle soluzioni e dell'infrastruttura cloud (OpenShift, Google Cloud) per i progetti dei clienti.",
+        "Definizione degli standard di CI/CD, deployment e osservabilità adottati dai team di sviluppo.",
+        "Punto di riferimento tecnico tra team di sviluppo, operations e clienti nelle scelte architetturali.",
+        "Mantengo la responsabilità su pipeline GitLab/Jenkins, cluster Kubernetes e rilasci."
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "GPI Group",
+      "position": "DevOps Engineer",
+      "url": "https://www.gpi.it/",
+      "startDate": "2024-05-01",
+      "endDate": "2026-08-01",
+      "summary": "",
       "highlights": [
-        "Started the company"
+        "Creazione di pipeline CI/CD in GitLab e Jenkins per i team del gruppo.",
+        "Supporto ai rilasci e gestione dei cluster Kubernetes (OpenShift e Google Cloud) dei clienti.",
+        "Sviluppo di componenti backend Java Spring per migliorare i processi di sicurezza e monitoring.",
+        "Script Bash per automatizzare build di componenti e installazioni."
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "Dedalus (divisione Smart Hospital Group S.R.L.)",
+      "position": "Full Stack Developer",
+      "url": "https://www.dedalus.com/",
+      "startDate": "2023-07-01",
+      "endDate": "2024-05-01",
+      "summary": "",
       "highlights": [
-        "Started the company"
+        "Manutenzione e creazione di componenti backend basati su Java Spring.",
+        "Affiancamento e formazione dei nuovi colleghi backend junior.",
+        "Creazione di pipeline Jenkins per sviluppatori e tester.",
+        "Sviluppo di moduli frontend in Angular."
+      ]
+    },
+    {
+      "name": "Dromedian (divisione Smart Hospital S.R.L.)",
+      "position": "Full Stack Developer",
+      "url": "",
+      "startDate": "2023-01-01",
+      "endDate": "2023-07-01",
+      "summary": "",
+      "highlights": [
+        "Progettazione e sviluppo di interi componenti che integravano i framework e le librerie aziendali in Java Spring.",
+        "Creazione di portali Angular con template dinamici e statici personalizzabili per i clienti.",
+        "Gestione di database relazionali e installazione dei componenti su VM con Docker."
+      ]
+    },
+    {
+      "name": "Think Open Group",
+      "position": "Full Stack Developer",
+      "url": "https://www.thinkopen.it/",
+      "startDate": "2022-06-01",
+      "endDate": "2023-01-01",
+      "summary": "",
+      "highlights": [
+        "Sviluppo di funzionalità per applicativi Java e Spring Framework e fix su componenti frontend.",
+        "Creazione di dashboard con Elasticsearch, RabbitMQ e ClickHouse."
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
-  "skills": [
+  "volunteer": [],
+  "education": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
+      "institution": "Bootcamp Full Stack Developer - Think Open Group, Milano",
+      "url": "https://www.thinkopen.it/",
+      "area": "Sviluppo con Spring Boot (Java) e Angular",
+      "studyType": "Bootcamp",
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "score": "",
+      "courses": []
     },
     {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "institution": "Instituto Provincia del Carchi, Guayaquil (Ecuador)",
+      "url": "",
+      "area": "Diploma di scuola superiore",
+      "studyType": "Diploma",
+      "startDate": "2019-01-01",
+      "endDate": "2019-12-01",
+      "score": "",
+      "courses": []
     }
+  ],
+  "awards": [
+    {
+      "title": "1° posto - Devathon",
+      "date": "2024-08-01",
+      "awarder": "Community di Pedro J. Plasencia Velasquez",
+      "summary": "Vault Shield, gestore di password personali."
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    { "name": "Kubernetes", "level": "Avanzato", "keywords": ["DevOps", "Cloud"] },
+    { "name": "OpenShift", "level": "Avanzato", "keywords": ["DevOps", "Cloud"] },
+    { "name": "Google Cloud", "level": "Avanzato", "keywords": ["Cloud"] },
+    { "name": "Docker", "level": "Avanzato", "keywords": ["DevOps", "Container"] },
+    { "name": "GitLab CI", "level": "Avanzato", "keywords": ["CI/CD"] },
+    { "name": "Jenkins", "level": "Avanzato", "keywords": ["CI/CD"] },
+    { "name": "Bash", "level": "Avanzato", "keywords": ["Automazione"] },
+    { "name": "Java", "level": "Avanzato", "keywords": ["Backend"] },
+    { "name": "Spring", "level": "Avanzato", "keywords": ["Backend"] },
+    { "name": "Angular", "level": "Intermedio", "keywords": ["Frontend"] },
+    { "name": "TypeScript", "level": "Intermedio", "keywords": ["Frontend"] },
+    { "name": "Python", "level": "Intermedio", "keywords": ["Scripting"] },
+    { "name": "C#", "level": "Base", "keywords": [".NET"] },
+    { "name": "SQL", "level": "Avanzato", "keywords": ["Database"] },
+    { "name": "Oracle DB", "level": "Intermedio", "keywords": ["Database"] },
+    { "name": "MongoDB", "level": "Intermedio", "keywords": ["Database"] },
+    { "name": "ClickHouse", "level": "Intermedio", "keywords": ["Database"] },
+    { "name": "ELK Stack", "level": "Intermedio", "keywords": ["Monitoring"] },
+    { "name": "Gradle", "level": "Intermedio", "keywords": ["Build"] },
+    { "name": "Git", "level": "Avanzato", "keywords": ["Versionamento"] },
+    { "name": "GitHub", "level": "Avanzato", "keywords": ["Versionamento"] }
   ],
   "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    },
-    {
-      "language": "Italian",
-      "fluency": "Advanced"
-    }
+    { "language": "Spanish", "fluency": "Madrelingua" },
+    { "language": "Italian", "fluency": "Avanzato" },
+    { "language": "English", "fluency": "Intermedio" }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [],
+  "references": [],
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
-      ],
-      "url": "https://mars.codes"
+      "name": "Vault Shield",
+      "isActive": false,
+      "description": "Gestore di password personali, 1° posto al Devathon della community di Pedro J. Plasencia Velasquez (agosto 2024).",
+      "highlights": ["1° posto Devathon", "Sicurezza", "Lavoro in team"],
+      "url": "https://github.com/VaultShield",
+      "github": "https://github.com/VaultShield"
     },
     {
-      "name": "AdventJS",
+      "name": "Vagabond Quotes",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "description": "Sito dinamico di riflessioni ispirate a una delle mie opere di finzione preferite, con deploy automatico su hosting gratuito.",
+      "highlights": ["Angular", "CI/CD", "Netlify"],
+      "url": "https://vagabond-quotes.netlify.app/"
     }
   ]
 }

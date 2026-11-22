@@ -1,47 +1,27 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
+    branches: [master]
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: withastro/action@v3
         with:
-          node-version: '20.13.1'
-          cache: 'pnpm'
-      - name: Install pnpm
-        run: npm install -g pnpm
-      - name: Restore pnpm cache
-        uses: pnpm/action-setup@v2
-        with:
-          version: 7.5.0
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build
-        run: pnpm build
-      - name: Save pnpm cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
+          package-manager: pnpm@9.1.4
 
   deploy:
     needs: build

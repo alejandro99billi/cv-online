@@ -1,5 +1,6 @@
 ---
 import { basics } from "@cv";
+import { withBase } from "@/utils/withBase";
 
 interface Props {
   title: string;
@@ -11,14 +12,14 @@ const { image, summary, url } = basics;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="cv-online/favicon.svg" />
-    <link rel="preload" as="image" href={image} />
+    <link rel="icon" type="image/svg+xml" href={withBase("favicon.svg")} />
+    {image && <link rel="preload" as="image" href={withBase(image)} />}
 
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />

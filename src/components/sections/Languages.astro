@@ -1,0 +1,31 @@
+---
+import Section from "../Section.astro"
+
+import { languages } from "@cv"
+
+const NAMES: Record<string, string> = {
+  Spanish: "Spagnolo",
+  Italian: "Italiano",
+  English: "Inglese",
+}
+---
+
+<Section title="Lingue">
+  <ul>
+    {
+      languages.map(({ language, fluency }) => (
+        <li>
+          <strong>{NAMES[language] ?? language}</strong>: {fluency}
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+</style>

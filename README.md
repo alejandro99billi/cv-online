@@ -1,94 +1,32 @@
-<div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="/https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
+# CV online – Alejandro Salvatierra
 
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+CV personale in versione web e stampabile (PDF), costruito con [Astro](https://astro.build/).
+Basato sul template [minimalist-portfolio-json](https://github.com/midudev/minimalist-portfolio-json) di midudev
+(schema dati [JSON Resume](https://jsonresume.org/schema/)).
 
-</p>
+Online: https://alejandro99billi.github.io/cv-online/
 
-</div>
+## Aggiornare i contenuti
 
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
+Tutti i dati stanno in `cv.json` (esperienze, formazione, progetti, competenze, lingue).
+La foto è `public/me.webp`.
 
-<p></p>
+## Comandi
 
-<div align="center">
+| Comando        | Azione                                      |
+| -------------- | ------------------------------------------- |
+| `pnpm install` | Installa le dipendenze                      |
+| `pnpm dev`     | Server locale su `localhost:4321/cv-online` |
+| `pnpm build`   | Type check + build in `./dist/`             |
+| `pnpm preview` | Anteprima della build                       |
 
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+Per il PDF: apri la pagina e premi `Cmd/Ctrl + K` → "Stampa / Salva PDF".
 
-</div>
+## Deploy
 
-<img src="portada.png"></img>
+Ogni push su `master` pubblica il sito su GitHub Pages (`.github/workflows/deploy.yml`).
+In *Settings → Pages* la sorgente deve essere **GitHub Actions**.
 
-## 🛠️ Stack
+## Licenza
 
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
-
-## 🚀 Empezar
-
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
-
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
-
-```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
-```
-
-### 2. Añade tu contenido:
-
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-
-### 3. Lanza el servidor de desarrollo:
-
-```bash
-# Disfruta del resultado
-pnpm dev
-```
-
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
-
-## 🧞 Comandos
-
-|     | Comando         | Acción                                                                       |
-| :-- | :-------------- | :--------------------------------------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en `localhost:4321`.                   |
-| ⚙️  | `build`         | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`. |
-| ⚙️  | `preview`       | Vista previa en local `localhost:4321`                                       |
-
-## 🔑 Licencia
-
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
+MIT – vedi `LICENSE.txt`.

@@ -1,5 +1,5 @@
 {
-  "name": "utafoliondefined",
+  "name": "cv-online",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@9.1.4",
@@ -7,8 +7,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "build-github": "astro check && astro build && cp -r dist/_astro/* dist/",
-    "build-test": "astro check && astro build && node copy-files.js",
     "preview": "astro preview",
     "astro": "astro"
   },
